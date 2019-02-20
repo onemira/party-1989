@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
-import HelloWorld from './components/HelloWorld'
+import Movies from './components/movies'
+import data from './data/data.json'
 
 class App extends Component {
   render() {
-    return <HelloWorld />
+    return <Movies OldMovies={data.results} />
   }
 }
 
